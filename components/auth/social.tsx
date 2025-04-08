@@ -25,7 +25,7 @@ export function Social() {
 
   return (
     <div className='w-full flex flex-col'>
-      <div className='mt-1 mb-6 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-gray-200 dark:before:border-gray-400 after:mt-0.5 after:flex-1 after:border-t after:border-gray-200 dark:after:border-gray-400'>
+      <div className='mt-1 mb-5 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-gray-900 dark:before:border-gray-600 after:mt-0.5 after:flex-1 after:border-t after:border-gray-200 dark:after:border-gray-600'>
         <p className='mx-4 mb-0 text-center font-medium text-muted-foreground'>
           or
         </p>
@@ -43,7 +43,7 @@ export function Social() {
         >
           {loadingGoogle && <Loader2 className='animate-spin mr-2' size={18} />}
           <FcGoogle className='h-5 w-5 mr-2' />
-          <span className='text-xs'>Sign in with Google</span>
+          <span className='text-xs'>Google</span>
         </Button>
         <Button
           size='lg'
@@ -57,7 +57,7 @@ export function Social() {
         >
           {loadingGitHub && <Loader2 className='animate-spin mr-2' size={18} />}
           <FaGithub className='h-5 w-5 mr-2' />
-          <span className='text-xs'>Sign in with GitHub</span>
+          <span className='text-xs'>GitHub</span>
         </Button>
       </div>
     </div>

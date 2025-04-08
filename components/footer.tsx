@@ -9,15 +9,15 @@ export function Footer() {
         Created by
         <Button
           variant='link'
-          className='text-muted-foreground text-xs px-1'
+          className='text-muted-foreground text-xs px-2'
           asChild
         >
           <Link
-            href='https://www.salimi.my'
+            href='https://github.com/Devambience'
             target='_blank'
             rel='noopener noreferrer'
           >
-            Salimi
+            Ankit
           </Link>
         </Button>
         &copy; {new Date().getFullYear()}.

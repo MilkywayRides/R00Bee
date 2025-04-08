@@ -1,3 +1,8 @@
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+export { prisma };
+
 import * as z from 'zod';
 import { UserRole } from '@prisma/client';
 
@@ -68,7 +73,7 @@ export const UpdatePasswordSchema = z
       message: 'Minimum of 8 characters required.'
     }),
     newPassword: z.string().min(8, {
-      message: 'Minimum of 8 characters required.'
+      message: 'Minimum 8 characters required.'
     }),
     confirmPassword: z.string().min(8, {
       message: 'Minimum 8 characters required.'
